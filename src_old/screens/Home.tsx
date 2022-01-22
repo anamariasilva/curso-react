@@ -1,6 +1,6 @@
 import React from "react";
-import Main from "../components/Main";
-import SideBar from "../components/Menus/SideBar";
+import Main from "../components/Menus/Main";
+import SideBar from "../components/SideBar";
 import styled from "styled-components";
 import createGlobalStyle from "../styles/global";
 
@@ -15,9 +15,8 @@ const Container = styled.div`
 
 const Home: React.FC = () => (
   <Container>
-    <GlobalStyle />
     <SideBar />
-    <Main welcome="Bem vinda!" route="Home" />
+    <Main welcome="Bem vinda!!!" route="Home" />
   </Container>
 );
 

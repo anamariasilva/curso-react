@@ -1,24 +1,22 @@
 import React from "react";
-import Main from "../components/Main";
-import SideBar from "../components/Menus/SideBar";
+import SideBar from "../components/SideBar";
 import styled from "styled-components";
+import Main from "../components/Menus/Main";
 import createGlobalStyle from "../styles/global";
 
 const GlobalStyle = createGlobalStyle;
-
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
 `;
-
-const Home: React.FC = () => (
+const About: React.FC = () => (
   <Container>
     <GlobalStyle />
     <SideBar />
-    <Main welcome="Bem vinda!" route="Home" />
+    <Main welcome="Quem Somos" route="Quem Somos" />
   </Container>
 );
 
-export default Home;
+export default About;
