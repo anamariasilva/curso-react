@@ -3,9 +3,9 @@ import Main from "../components/Main";
 import SideBar from "../components/Menus/SideBar";
 import styled from "styled-components";
 import createGlobalStyle from "../styles/global";
+import CoursesSchedulesGrid from "../components/CoursesScheduleGrid";
 
 const GlobalStyle = createGlobalStyle;
-
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -13,12 +13,12 @@ const Container = styled.div`
   flex-direction: row;
 `;
 
-const Home: React.FC = () => (
+const CoursesSchedules: React.FC = () => (
   <Container>
     <GlobalStyle />
     <SideBar />
-    <Main welcome="Bem vinda!" route="Home" />
+    <CoursesSchedulesGrid welcome="Cursos" route="cursos" />
   </Container>
 );
 
-export default Home;
+export default CoursesSchedules;
